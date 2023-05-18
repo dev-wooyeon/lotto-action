@@ -1,4 +1,4 @@
-## `lotto-action`
+## lotto-action
 
 python + github action을 활용해 자동으로 로또를 구매합니다.
 
@@ -14,9 +14,9 @@ GitHub Private 저장소 생성
 
 
 소스코드 작성
-2개의 파일이 필요합니다.
-action.yml
-buy_lotto.py
+2개의 파일이 필요합니다.  
+`action.yml`  
+`buy_lotto.py`
 
 ✅ .github/workflows/ 하위 경로에 action.yml 있어야만 GitHub Actions 이 동작합니다!
 ```
