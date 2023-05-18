@@ -4,13 +4,13 @@ python + github action을 활용해 자동으로 로또를 구매합니다.
 
 ![image](https://github.com/ieunune/lotto-action/assets/50124623/7c592099-2b61-4ade-8a2f-3071440cd7fc)
 
-준비물
+### 준비물
   - 예치금 사전 충전 https://dhlottery.co.kr/payment.do?method=payment
 
-구축하기
-GitHub Private 저장소 생성
-🔒 Private 로 생성해주세요.
-예) 저장소 이름 : lotto-action
+### 구축하기
+GitHub Private 저장소 생성.  
+🔒 Private 로 생성해주세요.  
+예) 저장소 이름 : lotto-action. 
 
 
 소스코드 작성
@@ -19,7 +19,7 @@ GitHub Private 저장소 생성
 `buy_lotto.py`
 
 ✅ .github/workflows/ 하위 경로에 action.yml 있어야만 GitHub Actions 이 동작합니다!
-```
+``` 
 $ root@master:github-action# tree -al -I '.git'  
 .  
 ├── .github
@@ -30,9 +30,12 @@ $ root@master:github-action# tree -al -I '.git'
 action.yml  
 ```
 
-name: Lotto Buy Bot (로또 구매봇)
-원인이 무엇인지 모르겠지만. cron 표현식을 이용해 스케줄링을 하여도 예상 시간보다 5분 ~ 10분 이후에 동작한다. (이 점을 유의해서 시간 설정을 해야합니다.)
+name: Lotto Action. 
+`Note` 
+원인이 무엇인지 모르겠지만.  
+cron 표현식을 이용해 스케줄링을 하여도 예상 시간보다 5분 ~ 10분 이후에 동작합니다. (이 점을 유의해서 시간 설정을 해야합니다.)
 
+``` bash
 #on: [push]
 on:
   schedule:
@@ -75,18 +78,17 @@ jobs:
     - name: Run!      
       run: |        
         python ./buy_lotto.py
-수정1과 수정2를 본인의 동행복권 아이디와 패스워드로 변경해주세요.
+```
+`Note` : 아래 main.py의 수정1과 수정2를 본인의 동행복권 아이디와 패스워드로 변경해주세요.
 
-buy_lotto.py
-
+`main.py`. 
+```
 from playwright.sync_api import Playwright, sync_playwright
 import time
 
 # 동행복권 아이디와 패스워드를 설정
-```
 USER_ID = '<아이디>'   # 수정1  
 USER_PW = '<비밀번호>' # 수정2
-```
 
 # 구매 개수를 설정
 COUNT = 1
@@ -158,7 +160,8 @@ def run(playwright: Playwright) -> None:
 
 with sync_playwright() as playwright:
     run(playwright)
-동작 확인하기
+```
+### 동작 확인하기
 lotto-action 저장소에 위에 작성한 action.yml와 buy_lotto.py 2개의 파일을 업로드 합니다.
 토요일 오전 08:55 분에 동작합니다. (약 2분 소요)
 Actions 탭에서 실행 결과를, 로또 마이페이지에서 구매 결과를 확인할 수 있습니다.
