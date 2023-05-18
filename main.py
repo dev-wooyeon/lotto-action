@@ -2,6 +2,7 @@ from playwright.sync_api import Playwright, sync_playwright
 import time
 
 # 동행복권 아이디와 패스워드를 설정
+# private 프로젝트에 계정 정보를 넣고 서브 모듈을 통해 계정 정보를 보호하자.
 USER_ID = 'qkrqja9706'
 USER_PW = '@p24749706'
 
