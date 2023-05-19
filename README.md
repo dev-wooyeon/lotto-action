@@ -5,7 +5,7 @@
 ![image](https://github.com/ieunune/lotto-action/assets/50124623/7c592099-2b61-4ade-8a2f-3071440cd7fc)
 
 ### 준비물
-  - 예치금 사전 충전 https://dhlottery.co.kr/payment.do?method=payment
+  - [예치금 사전 충전](https://dhlottery.co.kr/payment.do?method=payment)
 
 ### 구축하기
 GitHub Private 저장소 생성.  
