@@ -3,7 +3,7 @@ name : Lotto Action
 #on: [push]
 on:
   schedule:
-    - cron: '30 14 * * 6' # UST 기준의 크론. UST 23:30 는 KST 08:30 (+09:00)
+    - cron: '41 14 * * 6' # UST 기준의 크론. UST 23:30 는 KST 08:30 (+09:00)
 
 jobs:
   build:
@@ -41,4 +41,4 @@ jobs:
 
     - name: Run!
       run: |        
-        python ./main.py ${{secrets.MEMBER_ID}} ${{secret.MEMEBER_PW}}
+        python ./main.py ${{secrets.MEMBER_ID}} ${{secrets.MEMEBER_PW}}
