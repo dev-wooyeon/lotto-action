@@ -1,9 +1,9 @@
 ## lotto-action
 > **Note**  
-> python + github action을 활용해 자동으로 로또를 구매합니다.
+> python + github action을 활용해 자동으로 로또를 구매합니다.  
 > 하기 원문 링크의 계정 정보 암호화하는 기능을 추가한 프로젝트입니다.
 
-- [원문 링크](https://velog.io/@king/githubactions-lotto)
+**[원문 링크](https://velog.io/@king/githubactions-lotto)**
 
 ![image](https://github.com/ieunune/lotto-action/assets/50124623/7c592099-2b61-4ade-8a2f-3071440cd7fc)
 
@@ -165,6 +165,6 @@ with sync_playwright() as playwright:
     run(playwright)
 ```
 ### 동작 확인하기
-lotto-action 저장소에 위에 작성한 action.yml와 buy_lotto.py 2개의 파일을 업로드 합니다.
-금요일 오전 08:30분에 동작합니다. (실행 시간은 약 2분 소요, Action 시간이 느려서 정확한 시간대에 실행은 조금 어렵습니다.)
-Actions 탭에서 실행 결과를, 로또 마이페이지에서 구매 결과를 확인할 수 있습니다.
+lotto-action 저장소에 위에 작성한 action.yml와 buy_lotto.py 2개의 파일을 업로드 합니다.  
+금요일 오전 08:30분에 동작합니다. (실행 시간은 약 2분 소요, Action 시간이 느려서 정확한 시간대에 실행은 조금 어렵습니다.)  
+Actions 탭에서 실행 결과를, 로또 마이페이지에서 구매 결과를 확인할 수 있습니다.  
