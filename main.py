@@ -1,9 +1,9 @@
 from playwright.sync_api import Playwright, sync_playwright
-import time
+import time, sys
 
 # 동행복권 아이디와 패스워드를 설정
-USER_ID = 'qkrqja9706'
-USER_PW = '@p24749706'
+USER_ID = sys.argv[1]
+USER_PW = sys.argv[2]
 
 # 구매 개수를 설정
 COUNT = 1
