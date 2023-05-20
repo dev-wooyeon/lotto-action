@@ -3,7 +3,7 @@ name : Lotto Action
 #on: [push]
 on:
   schedule:
-    - cron: '17 15 * * 6' # UST 기준의 크론. UST 23:30 는 KST 08:30 (+09:00)
+    - cron: '30 23 * * 5' # UST 기준의 크론. UST 23:30 는 KST 08:30 (+09:00)
 
 jobs:
   build:
