@@ -1,6 +1,9 @@
 ## lotto-action
 > **Note**  
 > python + github action을 활용해 자동으로 로또를 구매합니다.
+> 하기 원문 링크의 계정 정보 암호화하는 기능을 추가한 프로젝트입니다.
+
+- [원문 링크](https://velog.io/@king/githubactions-lotto)
 
 ![image](https://github.com/ieunune/lotto-action/assets/50124623/7c592099-2b61-4ade-8a2f-3071440cd7fc)
 
