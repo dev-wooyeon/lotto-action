@@ -9,10 +9,7 @@
   - [예치금 사전 충전](https://dhlottery.co.kr/payment.do?method=payment)
 
 ### 구축하기
-GitHub Private 저장소 생성.  
-🔒 Private 로 생성해주세요.  
-예) 저장소 이름 : lotto-action. 
-
+GitHub 저장소 생성.  
 
 소스코드 작성
 2개의 파일이 필요합니다.  
