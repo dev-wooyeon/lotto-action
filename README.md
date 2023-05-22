@@ -17,7 +17,7 @@ GitHub Private 저장소 생성.
 소스코드 작성
 2개의 파일이 필요합니다.  
 `action.yml`  
-`buy_lotto.py`
+`main.py`
 
 ✅ .github/workflows/ 하위 경로에 action.yml 있어야만 GitHub Actions 이 동작합니다!
 ``` 
@@ -27,7 +27,7 @@ $ root@master:github-action# tree -al -I '.git'
 │   └── workflows
 │       └── action.yml
 ├── README.md
-└── buy_lotto.py
+└── main.py
 action.yml  
 ```
 
@@ -78,7 +78,7 @@ jobs:
       
     - name: Run!      
       run: |        
-        python ./buy_lotto.py
+        python main.py ${{scerets.MEMBER_ID}} ${{scerets.MEMBER_PW}}
 ```
 `Note` : 아래 main.py의 수정1과 수정2를 본인의 동행복권 아이디와 패스워드로 변경해주세요.
 
