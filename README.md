@@ -27,10 +27,8 @@ $ root@master:github-action# tree -al -I '.git'
 └── main.py
 ```
 
-name: Lotto Action. 
-`Note` 
-원인이 무엇인지 모르겠지만.  
-cron 표현식을 이용해 스케줄링을 하여도 예상 시간보다 5분 ~ 10분 이후에 동작합니다. (이 점을 유의해서 시간 설정을 해야합니다.)
+name: Lotto Action.  
+`Note` : 원인이 무엇인지 모르겠지만. cron 표현식을 이용해 스케줄링을 하여도 예상 시간보다 5분 ~ 10분 이후에 동작합니다. (이 점을 유의해서 시간 설정을 해야합니다.)
 
 ``` bash
 action.yml
