@@ -25,7 +25,6 @@ $ root@master:github-action# tree -al -I '.git'
 │       └── action.yml
 ├── README.md
 └── main.py
-action.yml  
 ```
 
 name: Lotto Action. 
@@ -34,6 +33,8 @@ name: Lotto Action.
 cron 표현식을 이용해 스케줄링을 하여도 예상 시간보다 5분 ~ 10분 이후에 동작합니다. (이 점을 유의해서 시간 설정을 해야합니다.)
 
 ``` bash
+action.yml
+
 #on: [push]
 on:
   schedule:
@@ -79,8 +80,8 @@ jobs:
 ```
 `Note` : 아래 main.py의 수정1과 수정2를 본인의 동행복권 아이디와 패스워드로 변경해주세요.
 
-`main.py`. 
-```
+`main.py`   
+``` python
 from playwright.sync_api import Playwright, sync_playwright
 import time
 
